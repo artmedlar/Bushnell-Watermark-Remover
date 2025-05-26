@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.env/
+env/
+
+# macOS
+.DS_Store
+
+# VSCode
+.vscode/
+
+# PyCharm
+.idea/
+
+# Spyder
+.spyderproject
+.spyproject
+
+# Temporary frame directories
+frames_*/
+
+# Output videos
+*_cleaned.mp4
+
+# Logs
+*.log
+
+# Emacs autosave and backup files
+*~
+#*
+
+# A junk drawer for random code
+.junk/
