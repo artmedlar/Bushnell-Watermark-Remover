@@ -1,6 +1,6 @@
 # Watermark Remover for Bushnell Trail Camera Videos
 
-A robust, cross-platform Python tool to automatically remove the Bushnell trail camera watermark from videos. The script extracts frames, patches the watermark region, and reassembles the cleaned video.
+Bushnell trail cameras add a bright orange 110x110 pixel Bushnell logo to the lower left corner of videos. This logo is obtrusive and there is no way to politely ask the camera to not do this.  So here we have a cross-platform Python tool which will automatically obscure this watermark. It does this by whiting-out the lower part of the logo (to match the info bar across the bottom of the frame) and pasting over the top half of the logo with a piece of nearby image. The script extracts frames, patches the watermark region, and reassembles the cleaned video.
 
 ## Features
 - Removes Bushnell watermark from video frames
@@ -13,7 +13,7 @@ A robust, cross-platform Python tool to automatically remove the Bushnell trail 
 ## Requirements
 - Python 3.7+
 - ffmpeg and ffprobe (must be installed and in your PATH)
-- Python packages: opencv-python, numpy, joblib, tqdm
+- Python packages: opencv-python, numpy, tqdm
 
 ## Installation
 1. Install ffmpeg (see https://ffmpeg.org/download.html)
@@ -51,5 +51,3 @@ python watermark_remover.py myvideo.mp4 -o output.mp4 --patch-width 120 --patch-
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for details.
-
-[Choose a license, e.g., MIT, and add it here.] 
